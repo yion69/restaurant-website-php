@@ -1,18 +1,18 @@
 {
   "functions": {
  
-    "api/index.php": {
+    "/api/index.php": {
       "runtime": "vercel-php@0.7.3"
     },
 
-    "api/LandingPage/index.php" : {
+    "/api/LandingPage/index.php" : {
       "runtime": "vercel-php@0.7.3"
     }
   },
   "routes": [
     {
-      "src": "api/LandingPage/(.*\\.css)",
-      "dest": "api/LandingPage/$1"
+      "src": "/api/LandingPage/(.*\\.css)",
+      "dest": "/api/LandingPage/$1"
     }
   ]
 }
