@@ -34,6 +34,9 @@ const fetchPageNumber = async () => {
             "Content-Type": "application/x-www-form-urlencoded"
         },
     });
+    if(!request.ok) {
+        renderPagination(10,1);
+    }
     const response = await request.json();
     const url =new URL(window.location.href);
     const param = new URLSearchParams(url.search)
