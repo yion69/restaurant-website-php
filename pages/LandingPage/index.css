@@ -57,19 +57,19 @@ body {
 
 .menu-item-1 {
     background-size: cover;
-    background-image: url('../../assets/food-items/coffee.jpeg');
+    background-image: url('../../assets/LandingPage/coffee.jpeg');
 }
 .menu-item-2 {
     background-size: cover;
-    background-image: url('../../assets/food-items/board.jpg');
+    background-image: url('../../assets/LandingPage/board.jpg');
 }
 .menu-item-3 {
     background-size: cover;
-    background-image: url('../../assets/chicken-gardenblue-with-vegetables-plate.jpg');
+    background-image: url('../../assets/LandingPage/chicken-gardenblue-with-vegetables-plate.jpg');
 }
 .menu-item-4 {
     background-size: cover;
-    background-image: url('../../assets/beef-steak-garnished-with-creamy-sauce-served-with-fried-aubergine-ketcup.jpg');
+    background-image: url('../../assets/LandingPage/beef-steak-garnished-with-creamy-sauce-served-with-fried-aubergine-ketcup.jpg');
 }
 
 .menu-item {
@@ -91,7 +91,7 @@ body {
 }
 
 .container-time {
-    background-image: url("../../assets/place/table-5356682.jpg");
+    background-image: url("../../assets/LandingPage/table-5356682.jpg");
     background-size: cover;
     background-position: center;
 }
