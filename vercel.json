@@ -3,6 +3,10 @@
  
     "api/index.php" : {
       "runtime": "vercel-php@0.7.3"
+    },
+    
+    "api/Controller/dbconnect.class.php": {
+      "runtime": "vercel-php@0.7.3"
     }
 
   },

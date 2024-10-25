@@ -3,11 +3,11 @@ function horizontalLoop(items, config) {
   items = gsap.utils.toArray(items);
   config = config || {};
   let tl = gsap.timeline({
-      repeat: config.repeat,
-      paused: config.paused,
-      defaults: { ease: "none" },
-      onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100),
-    }),
+    repeat: config.repeat,
+    paused: config.paused,
+    defaults: { ease: "none" },
+    onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100),
+  }),
     length = items.length,
     startX = items[0].offsetLeft,
     times = [],
@@ -15,7 +15,7 @@ function horizontalLoop(items, config) {
     xPercents = [],
     curIndex = 0,
     pixelsPerSecond = (config.speed || 1) * 100,
-    snap = config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1), 
+    snap = config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1),
     totalWidth,
     curX,
     distanceToStart,
@@ -27,7 +27,7 @@ function horizontalLoop(items, config) {
       let w = (widths[i] = parseFloat(gsap.getProperty(el, "width", "px")));
       xPercents[i] = snap(
         (parseFloat(gsap.getProperty(el, "x", "px")) / w) * 100 +
-          gsap.getProperty(el, "xPercent")
+        gsap.getProperty(el, "xPercent")
       );
       return xPercents[i];
     },
@@ -38,7 +38,7 @@ function horizontalLoop(items, config) {
     (xPercents[length - 1] / 100) * widths[length - 1] -
     startX +
     items[length - 1].offsetWidth *
-      gsap.getProperty(items[length - 1], "scaleX") +
+    gsap.getProperty(items[length - 1], "scaleX") +
     (parseFloat(config.paddingRight) || 0);
   for (i = 0; i < length; i++) {
     item = items[i];
@@ -92,7 +92,7 @@ function horizontalLoop(items, config) {
   tl.current = () => curIndex;
   tl.toIndex = (index, vars) => toIndex(index, vars);
   tl.times = times;
-  tl.progress(1, true).progress(0, true); 
+  tl.progress(1, true).progress(0, true);
   if (config.reversed) {
     tl.vars.onReverseComplete();
     tl.reverse();
@@ -146,6 +146,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     gsap.to('.section-1', {
         duration: 0.5,
+        background: "transparent",
         scrollTrigger: {
             pin: true,
             scrub: true,
