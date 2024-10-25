@@ -1,13 +1,10 @@
 {
   "functions": {
  
-    "/api/index.php": {
-      "runtime": "vercel-php@0.7.3"
-    },
-
-    "/api/LandingPage/index.php" : {
+    "api/LandingPage/index.php" : {
       "runtime": "vercel-php@0.7.3"
     }
+
   },
   "routes": [
     {
