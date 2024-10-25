@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           trigger: '.section-3',
           pin: true,
           scrub: 3,
-          markers: true
+          markers: false
         }
     });
     
