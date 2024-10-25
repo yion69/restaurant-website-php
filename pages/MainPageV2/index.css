@@ -186,10 +186,10 @@ body {
   transition: transform .1s ease;
 }
 .news-card-1 {
-  background-image: url('../../assets/place/restaurant-449952.jpg');
+  background-image: url('../../assets/MainPage/restaurant-449952.jpg');
 }
 .news-card-2 {
-  background-image: url('../../assets/place/restaurant-805103.jpg');
+  background-image: url('../../assets/MainPage/restaurant-805103.jpg');
 }
 
 /* Category */
